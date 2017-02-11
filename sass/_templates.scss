@@ -1,0 +1,135 @@
+// Front Page
+.hero-img {
+	height: 500px;
+
+	@include breakpoint(phone) {
+		height: 420px;
+	}
+
+	.hero-wrap {
+		@extend %wrap;
+		padding: 0 25px;
+		position: relative;
+		height: 100%;
+	}
+
+	.hero-inner-wrap {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+
+		@include breakpoint(phone) {
+			position: static;
+			transform: none;
+			padding-top: 25px;
+			text-align: center;
+		}
+	}
+
+	h2 {
+		color: $white;
+		font-size: 64px;
+		margin-bottom: 50px;
+		font-family: "Lato", sans-serif;
+		font-weight: 700;
+		text-shadow: 3px 3px 3px rgba(0,0,0,0.75);
+
+		@include breakpoint(tabletMin) {
+			margin-bottom: 30px;
+			padding-top: 0;
+		}
+
+		@include breakpoint(phone) {
+			font-size: 36px;
+			text-shadow: 2px 2px 2px rgba(0,0,0,0.75);
+			line-height: 1.6;
+		}
+	}
+
+	p {
+		color: $white;
+		font-weight: 700;
+		font-size: 30px;
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.75);
+		margin-bottom: 50px;
+
+		@include breakpoint(tabletMin) {
+			margin-bottom: 30px;
+		}
+
+		@include breakpoint(phone) {
+			font-size: 26px;
+			line-height: 1.4;
+		}
+	}
+}
+
+.home-section {
+	.wrap {
+		@extend %wrap;
+		padding: 50px 25px;
+	}
+}
+
+.section-one {
+	.two-thirds {
+		padding-right: 30px;
+
+		@include breakpoint(tabletMin) {
+			margin-bottom: 40px;
+		}
+	}
+
+	h2 {
+		@include breakpoint(tabletMin) {
+			font-size: 36px;
+		}
+	}
+}
+
+.section-two {
+	background: $blue;
+	color: $white;
+
+	a {
+		color: $white;
+	}
+
+	.one-third {
+
+		h3 {
+			@include breakpoint(tabletMin) {
+				margin-bottom: 10px;
+			}
+		}
+
+		@include breakpoint(tabletMin) {
+			margin-bottom: 40px;
+		}
+
+		&:last-child {
+			@include breakpoint(tabletMin) {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+.section-three {
+	.one-half {
+		padding-left: 30px;
+
+		@include breakpoint(tabletMin) {
+			padding-left: 0;
+		}
+
+		&.first {
+			padding-left: 0;
+			padding-right: 30px;
+
+			@include breakpoint(tabletMin) {
+				padding-right: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,74 @@
+html,
+body {
+	// min-width: $siteWidth; // Prevents backgrounds on these elements from being truncated on smaller screens on fixed-width sites
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	font-variant-ligatures: common-ligatures;
+	font-family: "Lato", sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+
+	background: $white;
+}
+
+a,
+button,
+input:focus,
+input[type='button'],
+input[type='reset'],
+input[type='submit'],
+textarea:focus,
+.button {
+	transition: all .1s ease-in-out;
+}
+
+::selection {
+	// text-shadow: none;
+}
+
+a {
+	text-decoration: none;
+	color: $blue;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $darkBlue;
+	}
+}
+
+ol,
+ul {
+	@extend %unstyled-list;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+strong {
+	font-weight: 700;
+}
+
+abbr {
+	letter-spacing: .1em;
+}
+
+pre {
+	overflow: scroll;
+	white-space: pre;
+}
+
+code {
+	overflow: hidden;
+	word-wrap: break-word;
+}
+
+iframe {
+	border: none;
+}

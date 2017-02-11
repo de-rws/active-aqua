@@ -1,0 +1,92 @@
+input:focus,
+textarea:focus {
+	// outline: none;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='search'],
+input[type='email'],
+input[type='url'],
+input[type='tel'],
+input[type='number'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='time'],
+textarea {
+	max-width: 100%;
+	width: 100%;
+	border-radius: 3px;		 // Removes the border radius on iOS
+	color: $black;
+	-webkit-appearance: none; // Removes the shadow on iOS
+	-moz-appearance: none;
+
+	padding: 10px 15px;
+	background: $whiteBlue;
+	border: 1px solid $darkBlue;
+
+	&:focus {
+		outline: 2px solid $blue;
+	}
+}
+
+// Hide the spinner on input[type="number"] in Firefox
+input[type='number'] {
+	// -moz-appearance:textfield;
+}
+
+// Hide the spinner on input[type="number"] in Chrome/Safari
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	// -webkit-appearance: none;
+}
+
+textarea {
+	resize: vertical; // Allow only vertical resizing of textareas.
+}
+
+select {
+	width: 100%;
+}
+
+.placeholder {
+	text-overflow: ellipsis;
+}
+
+::placeholder {
+	text-overflow: ellipsis;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	@extend .btn;
+}
+
+input[type='search'] {
+	box-sizing: border-box; // Overrides normalize.css
+}
+
+.search-form,
+.post-password-form {
+	display: flex;
+	align-items: center;
+
+	input[type='submit'] {
+		margin-left: .25em;
+	}
+}
+
+.search-form {
+	input[type='search'] {
+		flex: 1;
+	}
+}
+
+.post-password-form {
+	input[type='password'] {
+		flex: 1;
+	}
+}

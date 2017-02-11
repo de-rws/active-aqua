@@ -1,0 +1,38 @@
+// Use with @extend to make reponsive modules
+%wrap {
+	margin: 0 auto;
+	width: 100%;			// Site should always expand to browser width...
+	max-width: $siteWidth;	// ...unless the browser is larger than this
+}
+
+// http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+%image-replacement {
+	overflow: hidden;
+	text-indent: 200%;
+	white-space: nowrap;
+}
+
+.no-js {
+	.hide-no-js {
+		display: none !important;
+	}
+}
+
+%unstyled-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+%type {
+	margin-bottom: 1.5em;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	hyphens: auto;
+	letter-spacing: .01rem;
+	line-height: 1.5;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

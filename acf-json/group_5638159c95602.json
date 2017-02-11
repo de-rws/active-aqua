@@ -1,0 +1,282 @@
+{
+    "key": "group_5638159c95602",
+    "title": "Home Page Sections",
+    "fields": [
+        {
+            "key": "field_563815bf331aa",
+            "label": "Hero Image",
+            "name": "hero_image",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_563815eb331ab",
+            "label": "Hero Image",
+            "name": "hero_image",
+            "type": "image",
+            "instructions": "The main hero image underneath the header",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "large",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_56381641331ac",
+            "label": "Hero Title Text",
+            "name": "hero_title_text",
+            "type": "text",
+            "instructions": "The title text for the hero image",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_56381671331ad",
+            "label": "Hero Subtitle Text",
+            "name": "hero_subtitle_text",
+            "type": "text",
+            "instructions": "The subtitle text for the hero image",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_5638168a331ae",
+            "label": "Section One",
+            "name": "intro",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_563816e0331af",
+            "label": "Left Side Content",
+            "name": "s_one_left_side_content",
+            "type": "wysiwyg",
+            "instructions": "Content for the left side of this section",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_5638171f331b0",
+            "label": "Right Side Content",
+            "name": "s_one_right_side_content",
+            "type": "wysiwyg",
+            "instructions": "Content for the right side of this section",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0
+        },
+        {
+            "key": "field_5638184064db5",
+            "label": "Section Two",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5638189564db6",
+            "label": "Column One",
+            "name": "s_two_column_one",
+            "type": "wysiwyg",
+            "instructions": "Content for the first column",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.33%",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_563818b164db7",
+            "label": "Column Two",
+            "name": "s_two_column_two",
+            "type": "wysiwyg",
+            "instructions": "Content for the second column",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.33%",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_563818c964db8",
+            "label": "Column Three",
+            "name": "s_two_column_three",
+            "type": "wysiwyg",
+            "instructions": "Content for the third column",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33.33%",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_5638197567bbb",
+            "label": "Section Three",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5638198267bbc",
+            "label": "Left Side Content",
+            "name": "s_three_left_side_content",
+            "type": "wysiwyg",
+            "instructions": "Content for the left side of this section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        },
+        {
+            "key": "field_5638199e67bbd",
+            "label": "Right Side Content",
+            "name": "s_three_right_side_content",
+            "type": "wysiwyg",
+            "instructions": "Content for the right side of this section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1446654156
+}

@@ -1,0 +1,123 @@
+// Gravity Forms
+.gform_wrapper {
+
+	.gform_heading {
+
+		.gform_title {
+
+		}
+
+	}
+
+	.validation_error {
+		text-align: center;
+		margin-bottom: 15px;
+		color: red;
+	}
+
+	.gform_fields {
+		padding-left: 0;
+	}
+
+	.gfield {
+		list-style-type: none;
+		margin-bottom: 20px;
+
+		label {
+			display: none;
+		}
+
+		textarea {
+
+			&.large {
+				height: 200px;
+			}
+
+			&.medium {
+				height: 150px;
+			}
+
+			&.small {
+				height: 80px;
+			}
+		}
+	}
+
+	.gfield_contains_required {
+
+		.gfield_description,
+		.validation_message {
+			font-size: 14px;
+			color: red;
+		}
+	}
+
+	.gf_left_half,
+	.gf_name_halves .name_first {
+		float: left;
+		width: 49%;
+		clear: left;
+
+		@include breakpoint(phone) {
+			float: none;
+			width: 100%;
+		}
+	}
+
+	.gf_right_half,
+	.gf_name_halves .name_last {
+		float: right;
+		width: 49%;
+		clear: right;
+
+		@include breakpoint(phone) {
+			float: none;
+			width: 100%;
+		}
+	}
+
+	.gf_right_half+li.gfield {
+		clear: both;
+	}
+
+	.gsection {
+		padding-top: 25px;
+
+		h2 {
+			margin-bottom: 10px;
+			border-bottom: 2px solid $gray;
+			padding-bottom: 5px;
+		}
+	}
+
+	.gfield_checkbox {
+		padding-left: 15px;
+
+		li {
+			list-style-type: none;
+		}
+	}
+
+	.gform_validation_container {
+		display: none;
+	}
+
+	.gform_body {
+
+	}
+
+	.gform_footer {
+		input[type="submit"] {
+			background: transparent;
+
+			@include breakpoint(phone) {
+				width: 100%;
+			}
+		}
+
+		.g-submit-btn {
+			background: $blue;
+			border-radius: 5px;
+		}
+	}
+}

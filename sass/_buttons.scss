@@ -1,0 +1,27 @@
+.btn {
+	display: inline-block;
+	width: auto;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 1;
+	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+
+	background: $blue;
+	color: $white;
+	padding: 15px 25px;
+
+	&:hover,
+	&:focus,
+	&:active {
+
+	}
+
+	&.block {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}

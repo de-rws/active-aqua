@@ -1,0 +1,20 @@
+html {
+	&.lt-ie9 {
+		min-width: $siteWidth;
+	}
+}
+
+.lt-ie9 {
+	body {
+		min-width: $siteWidth;
+	}
+
+	.site-container {
+		margin: 0 auto;
+		width: $siteWidth;
+	}
+
+	input[type='password'] {
+		font-family: monospace; // Not all fonts will show the password bullets in IE8
+	}
+}

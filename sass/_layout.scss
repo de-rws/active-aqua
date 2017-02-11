@@ -1,0 +1,98 @@
+// Genesis layout <body> classes:
+// .content-sidebar-sidebar
+// .sidebar-content-sidebar
+// .sidebar-sidebar-content
+// .content-sidebar
+// .sidebar-content
+// .full-width-content
+
+.site-container {
+}
+
+.content-sidebar-wrap {
+	@extend %clearfix;
+	@extend %wrap;
+}
+
+.content {
+}
+
+.sidebar-primary {
+}
+
+.sidebar-secondary {
+}
+
+.full-width-content {
+	.content {
+		width: 100%;
+	}
+}
+
+.content-sidebar {
+	.content {
+		float: left;
+		width: 65%;
+
+		@include breakpoint(tabletMin) {
+			float: none;
+			width: 100%;
+			margin-bottom: 60px;
+		}
+	}
+
+	.sidebar-primary {
+		float: right;
+		width: 30%;
+
+		@include breakpoint(tabletMin) {
+			float: none;
+			width: 100%;
+			margin-bottom: 60px;
+		}
+	}
+}
+
+.sidebar-content {
+	.content {
+		float: right;
+		width: 65%;
+
+		@include breakpoint(tabletMin) {
+			float: none;
+			width: 100%;
+			margin-bottom: 60px;
+		}
+
+	}
+
+	.sidebar-primary {
+		float: left;
+		width: 30%;
+
+		@include breakpoint(tabletMin) {
+			float: none;
+			width: 100%;
+			margin-bottom: 60px;
+		}
+	}
+}
+
+.mobile-hide {
+	@include breakpoint(phone) {
+		display: none;
+	}
+}
+
+.mobile-block {
+	@include breakpoint(phone) {
+		display: block;
+	}
+}
+
+.mobile-only {
+	display: none;
+	@include breakpoint(phone) {
+		display: block;
+	}
+}

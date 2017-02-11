@@ -1,0 +1,72 @@
+.footer-widgets {
+	> .wrap {
+		@extend %wrap;
+	}
+
+	.widget-area {
+		float: left;
+		width: 30%;
+	}
+
+	.footer-widgets-1 {
+		margin-right: 5%;
+	}
+
+	.footer-widgets-3 {
+		float: right;
+		margin-right: 0;
+	}
+
+	.widget {
+		ul,
+		ol {
+			padding-left: 25px;
+		}
+
+		ul {
+			li {
+				list-style-type: disc;
+			}
+		}
+
+		ol {
+			li {
+				list-style-type: decimal;
+			}
+		}
+	}
+
+	.widgettitle {
+	}
+}
+
+.site-footer {
+	background: $offBlack;
+	border-bottom: 10px solid $blue;
+	color: $white;
+
+	@include breakpoint(tabletMin) {
+		text-align: center;
+	}
+
+	> .wrap {
+		@extend %wrap;
+		padding: 25px;
+	}
+
+	a {
+		color: $white;
+	}
+
+	.credits {
+		span {
+			float: right;
+
+			@include breakpoint(tabletMin) {
+				float: none;
+				display: block;
+				margin-top: 25px;
+			}
+		}
+	}
+}

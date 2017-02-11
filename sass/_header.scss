@@ -1,0 +1,90 @@
+.site-header {
+	background: red;
+	border-top: 10px solid $blue;
+
+	> .wrap {
+		@extend %wrap;
+		position: relative;
+		padding: 15px 25px 0;
+
+		@include breakpoint(phone) {
+			padding: 25px;
+		}
+	}
+}
+
+.title-area {
+	float: left;
+
+	@include breakpoint(phone) {
+		float: none;
+	}
+}
+
+.site-title,
+.site-description {
+	margin: 0;
+	line-height: 1;
+
+	.header-image & {
+		@extend %image-replacement;
+		display: block;
+	}
+}
+
+.site-title {
+	line-height: 1;
+
+	a {
+		&:hover,
+		&:focus,
+		&:active {
+		}
+	}
+
+	.header-image & {
+		> a {
+			display: block;
+			width: 403px;
+			height: 160px;
+
+			// @include breakpoint(retina) {
+			// 	background: url(../images/logo@2x.png) no-repeat;
+			// 	background-size: 360px 94px;
+			// }
+
+			background: url(../images/logo.png) no-repeat;
+
+			@include breakpoint(phone) {
+				margin: 0 auto;
+				width: 201px;
+				height: 80px;
+				background-size: 201px 80px;
+			}
+		}
+	}
+}
+
+.header-widget-area {
+	float: right;
+
+	@include breakpoint(phone) {
+		float: none;
+		text-align: center;
+	}
+
+	.widget {
+	}
+}
+
+.header-cta {
+	position: absolute;
+	top: 50%;
+	right: 25px;
+	transform: translateY(-50%);
+
+	@include breakpoint(phone) {
+		position: static;
+		transform: none;
+	}
+}

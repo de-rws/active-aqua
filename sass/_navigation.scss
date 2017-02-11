@@ -1,0 +1,56 @@
+.genesis-nav-menu {
+	@extend %clearfix;
+	width: 100%;
+
+	// Applied to all menu <li>s
+	.menu-item {
+		a {
+			position: relative;
+			display: block;
+		}
+	}
+
+	// First level
+	> .menu-item {
+		position: relative;
+		display: inline-block;
+		text-align: left;
+
+		&:hover,
+		&:focus,
+		&:active,
+		&.sfHover {
+			> .sub-menu {
+				left: auto;
+				opacity: 1;
+			}
+		}
+
+		&.current-menu-item {
+			> a {
+			}
+		}
+
+		> a {
+		}
+	}
+
+	// Sublevels
+	.sub-menu {
+		position: absolute;
+		top: 100%;
+		left: -9999px;
+		z-index: 99;
+		opacity: 0;
+		transition: opacity .4s ease-in-out;
+
+		> .menu-item {
+			> a {
+				position: relative;
+			}
+		}
+
+		.sub-menu {
+		}
+	}
+}

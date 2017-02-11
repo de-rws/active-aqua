@@ -1,0 +1,77 @@
+$imageMargin: 1.5em;
+
+embed,
+iframe,
+img,
+object,
+video,
+.wp-caption {
+	max-width: 100%;
+}
+
+// Remove the gap between images, videos, audio and canvas and the bottom of their containers: h5bp.com/i/440
+audio,
+canvas,
+img,
+video {
+	vertical-align: middle;
+}
+
+figure {
+	margin: 0;
+}
+
+img {
+	// width: auto;
+	// height: auto; // IE8 image height correct, so that img max-width: 100% doesn't produce disproportionate images
+}
+
+img.aligncenter,
+.aligncenter {
+	display: block;
+	margin: 0 auto $imageMargin auto;
+}
+
+img.alignnone {
+}
+
+.alignleft {
+	float: left;
+	text-align: left;
+}
+
+.alignright {
+	float: right;
+	text-align: right;
+}
+
+img.alignleft,
+.wp-caption.alignleft {
+	margin-right: $imageMargin;
+	margin-bottom: $imageMargin;
+}
+
+img.alignright,
+.wp-caption.alignright {
+	margin-bottom: $imageMargin;
+	margin-left: $imageMargin;
+}
+
+.wp-caption {
+	width: auto !important;
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.wp-caption-text {
+	@extend %type;
+	margin: 0;
+	text-align: center;
+}
+
+img.alignleft,
+img.alignright,
+img.aligncenter {
+}
